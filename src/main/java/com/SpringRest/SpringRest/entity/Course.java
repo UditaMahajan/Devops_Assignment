@@ -8,7 +8,7 @@ private long id;
  {
      this.id=id;
      this.title=title;
-     this.description=description;
+     //this.description=description;
  }
     public long getId() {
         return id;
