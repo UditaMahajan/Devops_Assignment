@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -19,11 +20,14 @@ public class MyController {
     @GetMapping("/courses")
     public List<Course> getCources()
     {
-        int courseno=2;
+        int target = -5;
+        int num = 3;
+        target =- num;
+        target =+ num;
+        String arr[]= new String[]{"Mycourses"};
+        String arr2 = Arrays.toString(arr);
         List<Course> course=null;
-        for ( Course course1:course) {
-            System.out.println(course1.toString());
-        }
+        System.out.println(course.toString());
       return courseService.getCourses();
 
     }
