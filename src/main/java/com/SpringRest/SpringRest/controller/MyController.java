@@ -19,8 +19,15 @@ public class MyController {
     @GetMapping("/courses")
     public List<Course> getCources()
     {
+        int courseno=2;
+        List<Course> course=null;
+        for ( Course course1:course) {
+            System.out.println(course1.toString());
+        }
       return courseService.getCourses();
+
     }
+
     @GetMapping("/courses/{courseId}")
     public Course getCourse(@PathVariable String courseId)
     {
