@@ -19,7 +19,7 @@ public class MyController {
     @GetMapping("/courses")
     public List<Course> getCources()
     {
-        int courseno=2;// Variable declared for future use - Bug
+        int courseno=+2;// Variable declared for future use - Bug
         List<Course> course=null;
         System.out.println(course.toString());
       return courseService.getCourses();
